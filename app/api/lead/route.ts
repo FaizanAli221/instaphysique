@@ -6,6 +6,8 @@ import { checkRateLimit, getClientIp } from "@/lib/rate-limit";
 import { sendConfirmationEmail } from "@/lib/email";
 import { devLeads, StoredLead } from "@/lib/dev-store";
 
+export const dynamic = "force-static";
+
 export async function POST(req: NextRequest) {
   // 1. Rate limit by IP — cheap first line of defense, no DB hit required.
   const ip = getClientIp(req);

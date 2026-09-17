@@ -3,14 +3,14 @@ import { connectToDatabase, isDatabaseConfigured } from "@/lib/mongodb";
 import { Lead } from "@/models/Lead";
 import { devLeads } from "@/lib/dev-store";
 
+export const dynamic = "force-static";
+
 const MAX_LIMIT = 200;
 const DEFAULT_LIMIT = 50;
 
 export async function GET(req: NextRequest) {
   const adminKey = process.env.ADMIN_API_KEY;
 
-  // Fail closed: if the secret isn't configured, refuse rather than expose
-  // every lead to an unauthenticated request.
   if (!adminKey) {
     return NextResponse.json(
       { success: false, message: "Admin endpoint is not configured." },
@@ -18,7 +18,13 @@ export async function GET(req: NextRequest) {
     );
   }
 
-  const providedKey = req.headers.get("x-admin-key");
+  let providedKey: string | null = null;
+  try {
+    providedKey = req?.headers?.get("x-admin-key") ?? null;
+  } catch {
+    providedKey = null;
+  }
+
   if (!providedKey || providedKey !== adminKey) {
     return NextResponse.json(
       { success: false, message: "Unauthorized." },
@@ -32,7 +38,6 @@ export async function GET(req: NextRequest) {
     MAX_LIMIT
   );
 
-  // If MongoDB is not configured, return leads from dev store
   if (!isDatabaseConfigured()) {
     const leads = devLeads.slice(0, limit);
     return NextResponse.json({
