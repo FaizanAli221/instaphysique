@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Phone, Menu, X, ArrowRight, MapPin } from "lucide-react";
+import { Phone, Menu, X, ArrowRight, MapPin, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import clsx from "clsx";
 import PillButton from "./PillButton";
@@ -69,11 +69,11 @@ export default function Navbar() {
         {/* Desktop Right Info & CTA */}
         <div className="hidden items-center gap-5 sm:flex">
           <a
-            href="tel:9169133707"
+            href="tel:9166923263"
             className="hidden items-center gap-1.5 text-xs font-semibold text-slate-body hover:text-aqua-dark xl:flex"
           >
             <Phone size={14} strokeWidth={2} className="text-aqua-dark" />
-            (916) 913-3707
+            (916) 692-3263
           </a>
 
           <PillButton
@@ -136,17 +136,24 @@ export default function Navbar() {
                 })}
               </nav>
 
-              <div className="rounded-xl bg-ice p-4 text-xs text-slate-body space-y-2 border border-slate-ink/5">
+              <div className="rounded-xl bg-ice p-4 text-xs text-slate-body space-y-2.5 border border-slate-ink/5">
                 <div className="flex items-start gap-2">
                   <MapPin size={15} className="mt-0.5 shrink-0 text-aqua-dark" />
                   <div>
-                    <span className="font-semibold text-navy">Roseville Studio:</span> 1470 Eureka Rd, Ste 100, Roseville, CA
+                    <span className="font-semibold text-navy">Roseville Studio:</span> 1470 Eureka Rd #100, Roseville, CA 95661
                   </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Phone size={15} className="shrink-0 text-aqua-dark" />
-                  <a href="tel:9169133707" className="font-medium text-navy underline">
-                    (916) 913-3707
+                <div className="flex items-center gap-4 pt-1">
+                  <a href="tel:9166923263" className="flex items-center gap-1.5 font-medium text-navy underline">
+                    <Phone size={14} className="text-aqua-dark" /> (916) 692-3263
+                  </a>
+                  <a
+                    href="https://wa.me/19166923263"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-1 font-semibold text-[#25D366] hover:underline"
+                  >
+                    <MessageCircle size={14} /> WhatsApp
                   </a>
                 </div>
               </div>

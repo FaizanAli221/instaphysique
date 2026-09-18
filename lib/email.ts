@@ -31,7 +31,7 @@ export async function sendConfirmationEmail(params: {
         <p>Your $89 two-week intro at InstaPhysique Roseville is reserved.</p>
         <p>A coach will text or call you shortly to book your first class.</p>
         <p style="color: #5B6068; font-size: 14px; margin-top: 24px;">
-          InstaPhysique Roseville &middot; 1470 Eureka Rd, Ste 100 &middot; (916) 913-3707
+          InstaPhysique Roseville &middot; 1470 Eureka Rd, Ste 100 &middot; (916) 692-3263
         </p>
       </div>
     `,

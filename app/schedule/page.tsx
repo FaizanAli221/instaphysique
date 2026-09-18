@@ -92,8 +92,8 @@ export default function SchedulePage() {
               </div>
               <p className="mt-3 text-xs text-slate-body leading-relaxed">
                 Having trouble booking or modifying your schedule? Call or text our front desk team directly at{" "}
-                <a href="tel:9169133707" className="font-semibold text-navy underline">
-                  (916) 913-3707
+                <a href="tel:19166923263" className="font-semibold text-navy underline">
+                  (916) 692-3263
                 </a>
                 .
               </p>

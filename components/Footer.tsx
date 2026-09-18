@@ -2,7 +2,7 @@
 
 import { useState, FormEvent } from "react";
 import Link from "next/link";
-import { Phone, Mail, MapPin, Instagram, Facebook, ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram, Facebook, MessageCircle, ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 import PillButton from "./PillButton";
 import { openLeadModal } from "./LeadModal";
 
@@ -87,22 +87,50 @@ export default function Footer({ showLeadBanner = true }: { showLeadBanner?: boo
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/getinstaphysique"
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 text-white/70 hover:bg-aqua hover:text-navy transition-colors"
                 aria-label="Instagram"
+                title="Follow us on Instagram @getinstaphysique"
               >
                 <Instagram size={17} />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/instaphysique"
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 text-white/70 hover:bg-aqua hover:text-navy transition-colors"
                 aria-label="Facebook"
+                title="Like us on Facebook"
               >
                 <Facebook size={17} />
+              </a>
+              <a
+                href="https://wa.me/19166923263"
+                target="_blank"
+                rel="noreferrer"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 text-white/70 hover:bg-[#25D366] hover:text-white transition-colors"
+                aria-label="WhatsApp"
+                title="Chat with us on WhatsApp"
+              >
+                <MessageCircle size={17} />
+              </a>
+              <a
+                href="mailto:roseville@instaphysique.com"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 text-white/70 hover:bg-aqua hover:text-navy transition-colors"
+                aria-label="Email"
+                title="Email Roseville Studio"
+              >
+                <Mail size={17} />
+              </a>
+              <a
+                href="tel:19166923263"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 text-white/70 hover:bg-aqua hover:text-navy transition-colors"
+                aria-label="Phone"
+                title="Call Roseville Studio"
+              >
+                <Phone size={17} />
               </a>
             </div>
           </div>
@@ -165,6 +193,15 @@ export default function Footer({ showLeadBanner = true }: { showLeadBanner?: boo
                 <p>1470 Eureka Rd, Ste 100</p>
                 <p>Roseville, CA 95661</p>
               </div>
+              <div className="pt-1">
+                <p className="font-semibold text-white/80">Contact:</p>
+                <p>
+                  <a href="tel:19166923263" className="hover:text-aqua transition-colors">(916) 692-3263</a>
+                </p>
+                <p>
+                  <a href="mailto:roseville@instaphysique.com" className="hover:text-aqua transition-colors">roseville@instaphysique.com</a>
+                </p>
+              </div>
             </div>
           </div>
 
@@ -219,8 +256,8 @@ export default function Footer({ showLeadBanner = true }: { showLeadBanner?: boo
             <Link href="/contact" className="hover:text-white/80 transition-colors">
               Terms of Service
             </Link>
-            <a href="tel:9169133707" className="hover:text-white/80 transition-colors">
-              (916) 913-3707
+            <a href="tel:19166923263" className="hover:text-white/80 transition-colors">
+              (916) 692-3263
             </a>
           </div>
         </div>

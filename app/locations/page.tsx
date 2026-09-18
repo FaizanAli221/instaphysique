@@ -50,8 +50,8 @@ export default function LocationsPage() {
                   <Phone size={18} className="text-aqua-dark shrink-0" />
                   <div>
                     <span className="font-semibold text-navy">Studio Phone:</span>{" "}
-                    <a href="tel:9169133707" className="text-navy hover:text-aqua-dark underline">
-                      (916) 913-3707
+                    <a href="tel:19166923263" className="text-navy hover:text-aqua-dark underline">
+                      (916) 692-3263
                     </a>
                   </div>
                 </div>

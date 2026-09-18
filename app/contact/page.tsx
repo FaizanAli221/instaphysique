@@ -100,8 +100,8 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-semibold text-navy">Phone &amp; Text</h4>
                   <p className="text-xs text-slate-body mt-1">
-                    <a href="tel:9169133707" className="text-navy hover:text-aqua-dark underline font-medium">
-                      (916) 913-3707
+                    <a href="tel:19166923263" className="text-navy hover:text-aqua-dark underline font-medium">
+                      (916) 692-3263
                     </a>
                   </p>
                   <p className="text-[11px] text-slate-body/70 mt-0.5">Call or text during studio operating hours</p>
@@ -113,11 +113,31 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-semibold text-navy">Email Inquiries</h4>
                   <p className="text-xs text-slate-body mt-1">
-                    <a href="mailto:hello@instaphysique.com" className="text-navy hover:text-aqua-dark underline font-medium">
-                      hello@instaphysique.com
+                    <a href="mailto:roseville@instaphysique.com" className="text-navy hover:text-aqua-dark underline font-medium">
+                      roseville@instaphysique.com
                     </a>
                   </p>
                   <p className="text-[11px] text-slate-body/70 mt-0.5">We respond within 24 business hours</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3 p-4 rounded-2xl bg-[#25D366]/10 border border-[#25D366]/20">
+                <div className="h-5 w-5 rounded-full bg-[#25D366] text-white flex items-center justify-center mt-0.5 shrink-0 font-bold text-xs">
+                  WA
+                </div>
+                <div>
+                  <h4 className="font-semibold text-navy">Instant WhatsApp Chat</h4>
+                  <p className="text-xs text-slate-body mt-1">
+                    <a
+                      href="https://wa.me/19166923263"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-[#128C7E] hover:underline font-semibold"
+                    >
+                      Chat with us on WhatsApp &rarr;
+                    </a>
+                  </p>
+                  <p className="text-[11px] text-slate-body/70 mt-0.5">Quick responses for booking &amp; inquiries</p>
                 </div>
               </div>
 

@@ -282,7 +282,7 @@ export default function PricingPage() {
                 <HelpCircle size={16} className="text-aqua-dark" /> What is the cancellation policy on memberships?
               </h4>
               <p className="mt-2 text-xs text-slate-body leading-relaxed">
-                All memberships can be cancelled at any time with a simple written 30-day notice via email to hello@instaphysique.com. There are no contracts, buyout fees, or cancellation penalties.
+                All memberships can be cancelled at any time with a simple written 30-day notice via email to roseville@instaphysique.com. There are no contracts, buyout fees, or cancellation penalties.
               </p>
             </div>
 

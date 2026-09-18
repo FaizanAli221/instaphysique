@@ -43,8 +43,8 @@ export default function FAQ() {
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-slate-body">
             Still stuck? Call the studio at{" "}
-            <a href="tel:9169133707" className="font-medium text-aqua-dark underline">
-              (916) 913-3707
+            <a href="tel:19166923263" className="font-medium text-aqua-dark underline">
+              (916) 692-3263
             </a>{" "}
             &mdash; a real person picks up.
           </p>
