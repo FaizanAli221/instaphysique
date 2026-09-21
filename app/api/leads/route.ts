@@ -3,8 +3,6 @@ import { connectToDatabase, isDatabaseConfigured } from "@/lib/mongodb";
 import { Lead } from "@/models/Lead";
 import { devLeads } from "@/lib/dev-store";
 
-export const dynamic = "force-static";
-
 const MAX_LIMIT = 200;
 const DEFAULT_LIMIT = 50;
 

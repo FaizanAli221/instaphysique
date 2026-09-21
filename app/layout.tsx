@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -46,6 +47,11 @@ export default function RootLayout({
         <Footer />
         <LeadModal />
         <WhatsAppButton />
+        <Script
+          src="https://cdn.zanderio.ai/widget/loader.js"
+          data-id="wdg_SD6DjUYOWnsjwVu8syNcTeJX"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
